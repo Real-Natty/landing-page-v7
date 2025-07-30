@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background: linear-gradient(#0f2027, #203a43, #2c5364) no-repeat;
+  height: 100vh;
+  color: aliceblue;
+}
 .nav-flex-container {
   display: flex;
   justify-content: space-between;
@@ -21,7 +26,7 @@
 }
 .logo-name-container i {
   font-size: 25px;
-  color: black;
+  color: aliceblue;
 }
 .nav-links {
   display: flex;
@@ -35,6 +40,7 @@
   border: none;
   background: none;
   appearance: none;
+  color: #ccc;
   cursor: pointer;
 }
 .nav-btn button {
@@ -43,13 +49,15 @@
   border: 1px solid;
   border-radius: 3px;
   margin: auto;
+  color: aliceblue;
 }
 .hamburger-container {
   display: none;
 }
 .h2-container {
-  padding-top: 3rem;
+  padding-top: 13rem;
   text-align: center;
+  align-items: center;
   font-size: 25px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -76,7 +84,7 @@
 .text {
   text-align: center;
   padding-top: 0.5rem;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(173, 173, 160, 0.7);
 }
 @media (max-width: 760px) {
   nav {
@@ -188,7 +196,7 @@
   .hamburger-container {
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1rem;
     /* border: 2px solid red; */
   }
 
@@ -200,7 +208,28 @@
   .hamburger-container .hamburger div {
     width: 25px;
     height: 3px;
-    background: black;
+    background: aliceblue;
     margin: 4px 0;
+  }
+  .nav-flex-container {
+    background: #426473;
+  }
+  .nav-flex-container .nav-links li select {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    color: aliceblue;
+    /* border: 2px solid red; */
+  }
+  .nav-flex-container .nav-links li select:hover {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+  }
+  .nav-flex-container .nav-links li select option {
+    border: 2px solid red;
+  }
+  .h2-container {
+    padding-top: 4rem;
   }
 }
