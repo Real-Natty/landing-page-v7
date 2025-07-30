@@ -58,10 +58,10 @@ main {
   cursor: pointer;
 }
 .nav-btn button {
-  padding: 8px;
+  padding: 0.3rem 1.1rem;
   background: none;
   border: 1px solid;
-  border-radius: 3px;
+  border-radius: 8px;
   margin: auto;
   color: aliceblue;
 }
@@ -72,6 +72,9 @@ main {
 header h2 {
   font-size: 70px;
   font-weight: 700;
+  background: linear-gradient(#ff416c, #ecec07);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .article-container {
