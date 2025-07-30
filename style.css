@@ -7,16 +7,30 @@ body {
   background: linear-gradient(#0f2027, #203a43, #2c5364) no-repeat;
   height: 100vh;
   color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  gap: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
 .nav-flex-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: #ccc; */
   padding: 10px 5px 5px 5px;
   width: 100%;
-
-  /* border: 2px solid red; */
 }
 .logo-name-container {
   display: flex;
@@ -54,38 +68,50 @@ body {
 .hamburger-container {
   display: none;
 }
-.h2-container {
-  padding-top: 13rem;
-  text-align: center;
-  align-items: center;
-  font-size: 25px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-.h2-container h2 span {
-  color: blue;
-}
-.article {
-  text-align: center;
-  padding: 1rem 0;
-}
-.btn-container {
-  text-align: center;
-  padding-top: 1.5rem;
-}
-.btn-container button {
-  padding: 0.8rem 1.8rem;
+
+header h2 {
+  font-size: 70px;
   font-weight: 700;
-  color: aliceblue;
-  background: rgb(62, 62, 231);
-  border: none;
-  cursor: pointer;
 }
 
-.text {
-  text-align: center;
-  padding-top: 0.5rem;
-  color: rgba(173, 173, 160, 0.7);
+.article-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
 }
+
+.article-container p {
+  font-size: 18px;
+}
+
+.btn-container button[type="button"] {
+  width: 60%;
+  height: 20px;
+  padding: 1rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 4px 5px 12px rgba(173, 21, 21, 0.1);
+  border: none;
+  outline: none;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding-top: 1rem;
+  background-color: inherit;
+}
+
+footer span {
+  text-align: start;
+  color: gray;
+}
+
 @media (max-width: 760px) {
   nav {
     align-items: center;
@@ -219,17 +245,10 @@ body {
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
     color: aliceblue;
-    /* border: 2px solid red; */
   }
   .nav-flex-container .nav-links li select:hover {
     padding: 3px;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-  }
-  .nav-flex-container .nav-links li select option {
-    border: 2px solid red;
-  }
-  .h2-container {
-    padding-top: 4rem;
   }
 }
