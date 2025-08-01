@@ -24,7 +24,10 @@ main {
   text-align: center;
   padding: 1rem;
 }
-
+.id {
+  text-align: end;
+  font-weight: 700;
+}
 .nav-flex-container {
   display: flex;
   justify-content: space-between;
