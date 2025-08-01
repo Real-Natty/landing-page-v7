@@ -106,6 +106,10 @@ header h2 {
   outline: none;
   font-weight: 600;
 }
+.btn-container button a {
+  text-decoration: none;
+  color: #0f2027;
+}
 
 footer {
   text-align: center;
@@ -117,7 +121,129 @@ footer span {
   text-align: start;
   color: gray;
 }
+/* login page  */
+.login-sect {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+.login-header {
+  text-align: center;
+  /* background: #2c5364; */
+  padding: 5px;
+  font-size: 20px;
+  width: 100%;
+  border: 2px solid red;
+}
+hr {
+  margin-bottom: 20px;
+}
+.login-form {
+  background: #fff;
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+.login-form h3 {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 3px;
+  padding: 10px;
+  background: linear-gradient(#ff416c, #ecec07);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+.input-log {
+  display: flex;
+  align-items: center;
+}
 
+.login-form label {
+  /* border: 2px solid red; */
+  color: #426473;
+  display: none;
+}
+.login-form i {
+  color: #203a43;
+}
+.login-form .name {
+  padding-bottom: 10px;
+}
+.name .input-log i {
+  /* border: 2px solid red; */
+  margin-left: 8rem;
+}
+
+.login-form .name input {
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+  border: none;
+  margin-right: 10rem;
+  border-bottom: 1px solid;
+  /* border: 2px solid red; */
+}
+.login-form article {
+  color: #426473;
+  text-align: center;
+  /* margin-left: 7rem; */
+}
+.login-form article p a {
+  text-decoration: none;
+}
+.login-form .login-btn {
+  padding: 8px;
+  text-align: center;
+}
+.login-form .login-btn button {
+  width: 30%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(#79c6f6, #5670b1);
+  cursor: pointer;
+}
+.login-form .login-btn button:hover {
+  background: #ccc;
+}
+.icon-container {
+  text-align: center;
+  color: #203a43;
+  padding: 30px 0;
+}
+.icon-container .social-icons {
+  padding: 10px 0;
+}
+.icon-container .social-icons .icons {
+  padding: 10px 0 50px 0;
+}
+.icon-container .social-icons .icons .fb-icon i {
+  color: #fff;
+  background: #1877f2;
+  padding: 5px;
+  border-radius: 20px;
+}
+.icon-container .social-icons .icons .x-icon i {
+  background: #1da1f2;
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+}
+.icon-container .social-icons .icons .google-icon i {
+  background: #a7d414;
+  color: #f00;
+  /* background: #3367d6; */
+  padding: 5px;
+  border-radius: 20px;
+}
+.icon-container .sign-up-link p a {
+  text-decoration: none;
+  color: #0f2027;
+}
+/* end here */
 @media (max-width: 760px) {
   nav {
     align-items: center;
@@ -135,6 +261,29 @@ footer span {
     gap: none;
     border: none;
     padding: 0 0.2rem;
+  }
+  .login-form .name input {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    border: none;
+    border-bottom: 1px solid;
+  }
+  .name .input-log i {
+    /* border: 2px solid red; */
+    margin: auto;
+  }
+  .login-form label {
+    /* border: 2px solid red; */
+    color: #426473;
+    display: block;
+  }
+  .login-form .login-btn button {
+    width: 50%;
+    padding: 5px;
+  }
+  .login-form article {
+    text-align: end;
   }
 }
 /* @media (max-width: 480px) {
@@ -256,5 +405,31 @@ footer span {
     padding: 3px;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+  }
+  .login-sect {
+    font-size: 10px;
+  }
+  .login-form .name input {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    border: none;
+    border-bottom: 1px solid;
+  }
+  .name .input-log i {
+    /* border: 2px solid red; */
+    margin: auto;
+  }
+  .login-form label {
+    /* border: 2px solid red; */
+    color: #426473;
+    display: block;
+  }
+  .login-form .login-btn button {
+    width: 50%;
+    padding: 5px;
+  }
+  .login-form article {
+    text-align: end;
   }
 }
