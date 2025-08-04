@@ -130,11 +130,9 @@ footer span {
 }
 .login-header {
   text-align: center;
-  /* background: #2c5364; */
   padding: 5px;
   font-size: 20px;
   width: 100%;
-  /* border: 2px solid red; */
 }
 hr {
   margin-bottom: 2.5rem;
@@ -162,7 +160,6 @@ hr {
 }
 
 .login-form label {
-  /* border: 2px solid red; */
   color: #426473;
   display: none;
 }
@@ -235,7 +232,6 @@ hr {
 .icon-container .social-icons .icons .google-icon i {
   background: #a7d414;
   color: #f00;
-  /* background: #3367d6; */
   padding: 5px;
   border-radius: 20px;
 }
@@ -243,8 +239,16 @@ hr {
   text-decoration: none;
   color: #0f2027;
 }
+
 /* end here */
 @media (max-width: 760px) {
+  body {
+    background: linear-gradient(#0f2027, #203a43, #2c5364) no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
   nav {
     align-items: center;
     font-size: 10px;
@@ -256,11 +260,23 @@ hr {
     gap: 2px;
     padding: 0 0.2rem;
   }
+  .login-body {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
 
   .nav-links {
     gap: none;
     border: none;
     padding: 0 0.2rem;
+  }
+  .login-form {
+    width: 100%;
+    max-width: 1200px;
   }
   .login-form .name input {
     padding: 10px;

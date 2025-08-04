@@ -6,6 +6,8 @@ const year = new Date().getFullYear();
 const div = document.getElementById("time");
 const time = document.getElementById("s-time");
 const countNum = document.getElementById("count");
+const popup = document.getElementById("popup");
+const loginForm = document.getElementById("login-form");
 
 footerSpan.innerHTML = `&copy; ${year}`;
 setInterval(() => {
@@ -36,6 +38,32 @@ setInterval(() => {
 // }
 // setInterval(printNumber, 600);
 
-elementTwo.addEventListener("click", function () {
-  elementOne.classList.toggle("show");
-});
+// elementTwo.addEventListener("click", function () {
+//   elementOne.classList.toggle("show");
+// });
+
+// openBtn.addEventListener("click", () => {
+//   modal.classList.add("open");
+//   console.log(first);
+// });
+
+// closeBtn.addEventListener("click", () => {
+//   modal.classList.remove("open");
+// });
+
+// function openPopup() {
+//   popup.classList.add("open-popup");
+//   // console.log("Popup opened");
+// }
+
+// function closePopup() {
+//   popup.classList.remove("open-popup");
+// // }
+// loginForm.addEventListener("submit", function (e) {
+//   e.preventDefault(); // stop page refresh
+//   openPopup(); // show popup
+// });
+
+// function closePopup() {
+//   popup.classList.remove("open-popup");
+// }
