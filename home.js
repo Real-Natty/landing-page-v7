@@ -156,13 +156,13 @@
 // closeBtn.addEventListener("click", () => {
 //   modal.classList.remove("close");
 // });
-const popup = document.getElementById("popup");
+// const popup = document.getElementById("popup");
 
-function openPopup() {
-  popup.classList.add("open-popup");
-  // console.log("Popup opened");
-}
+// function openPopup() {
+//   popup.classList.add("open-popup");
+//   // console.log("Popup opened");
+// }
 
-function closePopup() {
-  popup.classList.remove("open-popup");
-}
+// function closePopup() {
+//   popup.classList.remove("open-popup");
+// }
